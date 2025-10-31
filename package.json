@@ -7,7 +7,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    
+    "dev:dev": "nuxt dev --dotenv .env.development",
+    "dev:test": "nuxt dev --dotenv .env.test",
+    "dev:prod": "nuxt dev --dotenv .env.production",
+    
+    "build:dev": "nuxt build --dotenv .env.development",
+    "build:test": "nuxt build --dotenv .env.test",
+    "build:prod": "nuxt build --dotenv .env.production",
+    
+    "generate:dev": "nuxt generate --dotenv .env.development",
+    "generate:test": "nuxt generate --dotenv .env.test",
+    "generate:prod": "nuxt generate --dotenv .env.production",
+    
+    "preview:dev": "nuxt preview --dotenv .env.development",
+    "preview:test": "nuxt preview --dotenv .env.test",
+    "preview:prod": "nuxt preview --dotenv .env.production"
   },
   "dependencies": {
     "@nuxt/image": "^1.11.0",
